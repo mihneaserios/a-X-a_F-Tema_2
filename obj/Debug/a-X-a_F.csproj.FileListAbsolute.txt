@@ -1,0 +1,8 @@
+C:\Users\tudor\Desktop\Proiecte liceu\a-X-a_F\obj\Debug\a-X-a_F.csproj.AssemblyReference.cache
+C:\Users\tudor\Desktop\Proiecte liceu\a-X-a_F\obj\Debug\a-X-a_F.csproj.SuggestedBindingRedirects.cache
+C:\Users\tudor\Desktop\Proiecte liceu\a-X-a_F\obj\Debug\a-X-a_F.csproj.CoreCompileInputs.cache
+C:\Users\tudor\Desktop\Proiecte liceu\a-X-a_F\bin\Debug\a-X-a_F.exe.config
+C:\Users\tudor\Desktop\Proiecte liceu\a-X-a_F\bin\Debug\a-X-a_F.exe
+C:\Users\tudor\Desktop\Proiecte liceu\a-X-a_F\bin\Debug\a-X-a_F.pdb
+C:\Users\tudor\Desktop\Proiecte liceu\a-X-a_F\obj\Debug\a-X-a_F.exe
+C:\Users\tudor\Desktop\Proiecte liceu\a-X-a_F\obj\Debug\a-X-a_F.pdb
