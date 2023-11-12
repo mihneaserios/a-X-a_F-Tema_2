@@ -17,9 +17,9 @@ namespace a_X_a_F
             Console.WriteLine(name + " is going at the speed of " + maxSpeed);
         }
 
-        public Car()
+        public Car(string nameName)
         {
-
+            name = nameName;
         }
         public Car(string nameName, string colorName, int yearValue, int maxSpeedValue)
         {
@@ -27,6 +27,10 @@ namespace a_X_a_F
             color = colorName;
             year = yearValue;
             maxSpeed = maxSpeedValue;
+        }
+
+        public Car()
+        {
         }
     }
 }

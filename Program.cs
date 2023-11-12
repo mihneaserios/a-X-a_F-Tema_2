@@ -10,7 +10,9 @@ namespace a_X_a_F
     {
         static void Main(string[] args)
         {
+#pragma warning disable IDE0017 // Simplify object initialization
             Car Ford = new Car();
+#pragma warning restore IDE0017 // Simplify object initialization
             Ford.name = "Mustang";
             Ford.year = 2021;
             Ford.color = "white";
@@ -18,9 +20,10 @@ namespace a_X_a_F
             Ford.FullThrottle();
             Console.WriteLine(Ford.name);
             Console.WriteLine(Ford.year);
-            Console.WriteLine(Ford.color);
 
+#pragma warning disable IDE0017 // Simplify object initialization
             Car Opel = new Car();
+#pragma warning restore IDE0017 // Simplify object initialization
             Opel.name = "Astra";
             Opel.year = 2005;
             Opel.color = "red";
@@ -28,37 +31,14 @@ namespace a_X_a_F
             Opel.FullThrottle();
             Console.WriteLine(Opel.name);
             Console.WriteLine(Opel.year);
-            Console.WriteLine(Opel.color);
 
-            Car Audi = new Car();
-            Audi.name = "Performance";
-            Audi.year = 2019;
-            Audi.color = "blue";
-            Audi.maxSpeed = 300;
-            Audi.FullThrottle();
-            Console.WriteLine(Audi.name);
-            Console.WriteLine(Audi.year);
-            Console.WriteLine(Audi.color);
-
+#pragma warning disable IDE0017 // Simplify object initialization
             Car Volvo = new Car();
+#pragma warning restore IDE0017 // Simplify object initialization
             Volvo.name = "XC40 Recharge";
-            Volvo.year = 2013;
-            Volvo.color = "black";
-            Volvo.maxSpeed = 180;
             Volvo.FullThrottle();
             Console.WriteLine(Volvo.name);
             Console.WriteLine(Volvo.year);
-            Console.WriteLine(Volvo.color);
-
-            Car Renault = new Car();
-            Renault.name = "Megan";
-            Renault.year = 2007;
-            Renault.color = "green";
-            Renault.maxSpeed = 130;
-            Renault.FullThrottle();
-            Console.WriteLine(Renault.name);
-            Console.WriteLine(Renault.year);
-            Console.WriteLine(Renault.color);
         }
     }
 }
