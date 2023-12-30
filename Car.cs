@@ -6,20 +6,42 @@ using System.Threading.Tasks;
 
 namespace a_X_a_F
 {
-    public class Car
+    class Car : Vehicle
     {
-        public string color;
-        public string name;
-        public int maxSpeed;
-        public int year;
+        private string color;
+        private string name;
+        private int maxSpeed;
+        private int year;
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+        public string Color
+        {
+            get { return color; }
+            set { color = value; }
+        }
+
+        public int Year
+        {
+            get { return year; }
+            set
+            {
+                if (value < 1980)
+                {
+                    throw new Exception("Please pass a correct value");
+                }
+                else
+                {
+                    year = value;
+                }
+            }
+        }
         public void FullThrottle()
         {
             Console.WriteLine(name + " is going at the speed of " + maxSpeed);
-        }
-
-        public Car(string nameName)
-        {
-            name = nameName;
         }
         public Car(string nameName, string colorName, int yearValue, int maxSpeedValue)
         {
@@ -29,8 +51,17 @@ namespace a_X_a_F
             maxSpeed = maxSpeedValue;
         }
 
-        public Car()
+        public Car(string nameName, string colorName, int yearValue, int maxSpeedValue, string eng_type)
         {
+            name = nameName;
+            color = colorName;
+            year = yearValue;
+            maxSpeed = maxSpeedValue;
+            engine_type = eng_type;
+        }
+        public Car(string nameName)
+        {
+            name = nameName;
         }
     }
 }

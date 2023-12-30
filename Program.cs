@@ -6,39 +6,36 @@ using System.Threading.Tasks;
 
 namespace a_X_a_F
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-#pragma warning disable IDE0017 // Simplify object initialization
-            Car Ford = new Car();
-#pragma warning restore IDE0017 // Simplify object initialization
-            Ford.name = "Mustang";
-            Ford.year = 2021;
-            Ford.color = "white";
-            Ford.maxSpeed = 100;
+            Car Ford = new Car("Mustang", "white", 2021, 100);
+            Car Opel = new Car("Astra", "blue", 2020, 120, "electric");
+            Car Volvo = new Car("XC-90");            
             Ford.FullThrottle();
-            Console.WriteLine(Ford.name);
-            Console.WriteLine(Ford.year);
-
-#pragma warning disable IDE0017 // Simplify object initialization
-            Car Opel = new Car();
-#pragma warning restore IDE0017 // Simplify object initialization
-            Opel.name = "Astra";
-            Opel.year = 2005;
-            Opel.color = "red";
-            Opel.maxSpeed = 170;
+            Ford.honk();
+            Console.WriteLine(Ford.Name);
+            Console.WriteLine(Ford.Year);
+            Console.WriteLine(Ford.Color);
+            Console.WriteLine(Ford.engine_type);
             Opel.FullThrottle();
-            Console.WriteLine(Opel.name);
-            Console.WriteLine(Opel.year);
+            Opel.honk();
+            Console.WriteLine(Opel.Name);
+            Console.WriteLine(Opel.Year);
+            Console.WriteLine(Opel.Color);
 
-#pragma warning disable IDE0017 // Simplify object initialization
-            Car Volvo = new Car();
-#pragma warning restore IDE0017 // Simplify object initialization
-            Volvo.name = "XC40 Recharge";
-            Volvo.FullThrottle();
-            Console.WriteLine(Volvo.name);
-            Console.WriteLine(Volvo.year);
+            Console.WriteLine("Enter Volvo's age:");
+            try
+            {
+                Volvo.Year = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Volvo age is: " + Volvo.Year);
+            }catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+
+            Console.ReadKey();
         }
     }
 }
